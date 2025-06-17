@@ -23,6 +23,12 @@
   </head>
 
   <body>
-    <%= yield %>
+    <%= render partial: 'shared/header' %>
+
+    <div class="container mt-3">
+      <%= render partial: 'shared/messages' %>
+
+      <%= yield %>
+    </div>
   </body>
 </html>
